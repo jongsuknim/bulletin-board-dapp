@@ -37,6 +37,11 @@ new Vue({
 				await contract.methods.message().call({ from: this.currentAccount });
 			this.loading = false;
 			console.log("this.currentMessage", this.currentMessage);
+		},
+
+		async updateMessage(newMessage) {
+			await contract.methods.setMessage(newMessage).send({ from: this.currentAccount });
+			await this.getMessage();
 		}
 	},
 	render: h => h(App)

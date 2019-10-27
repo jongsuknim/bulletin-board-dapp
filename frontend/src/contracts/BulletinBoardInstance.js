@@ -1,7 +1,7 @@
 import web3 from './web3';
 
-// const address = '0xc24267c0a67a2c2013d439a0eb85eb895fd7f30e'; // ropsten
-const address = '0xa55b294a7fdd684f218994b54cf274d74de8175d'; // ropsten
+// const address = '0xa55b294a7fdd684f218994b54cf274d74de8175d'; // ropsten
+const address = '0xc24267c0a67a2c2013d439a0eb85eb895fd7f30e'; // mainnet
 
 const abi = [
 	{
